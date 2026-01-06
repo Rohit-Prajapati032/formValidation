@@ -100,7 +100,12 @@ const loginUser = ()=>{
     const loginPassword = document.querySelector('#loginPassword').value.trim();
     const user = JSON.parse(localStorage.getItem("Users"));
     if(!loginEmail || !loginPassword) return alert("please enter all field required");
-    if(loginEmail === user.email){
+    if(loginEmail !== user.email || loginPassword !== user.password){
+        alert("Please valid Email and Password");
+        window.location.href = 'register.html';
+        return;
+    }
+    if(loginEmail === user.email || loginPassword === user.password){
         localStorage.setItem('currentUser', JSON.stringify(user));
         window.location.href = 'index.html'
     }
