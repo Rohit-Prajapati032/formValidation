@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <div class="auth-wrapper">
+    <div class="auth-card">
+
+      <h2 class="auth-title">Welcome Back 👋</h2>
+      <p class="auth-subtitle">Login to your account</p>
+
+      <!-- Email -->
+      <div class="auth-field">
+        <i class="fa fa-envelope"></i>
+        <input
+          type="email"
+          id="loginEmail"
+          class="auth-input"
+          placeholder="Email address"
+        />
+      </div>
+
+      <!-- Password -->
+      <div class="auth-field">
+        <i class="fa fa-lock"></i>
+        <input
+          type="password"
+          id="loginPassword"
+          class="auth-input"
+          placeholder="Password"
+        />
+        <span class="toggle-password" id="toggle-password">
+          <i class="fa fa-eye eyeIcon"></i>
+        </span>
+      </div>
+
+      <button id="loginBtn" class="auth-btn">
+        <i class="fa fa-sign-in-alt "></i> Login
+      </button>
+
+      <p class="auth-footer">
+        Don’t have an account?
+        <a href="register.html">Register</a>
+      </p>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

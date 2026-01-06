@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+<!-- ===== TOP NAVBAR ===== -->
+<header class="topbar">
+  <div class="logo">ProductLog</div>
+
+  <div class="user-area">
+    <span id="userName">👤 User</span>
+    <button id="signOutBtn">
+      <i class="fa fa-sign-out-alt"></i>
+    </button>
+  </div>
+</header>
+
+<!-- ===== MAIN LAYOUT ===== -->
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <a href="#" class="active">
+      <i class="fa fa-home"></i> Dashboard
+    </a>
+    <a href="#">
+      <i class="fa fa-box"></i> My Products
+    </a>
+    <a href="addProduct.html">
+      <i class="fa fa-plus"></i> Add Product
+    </a>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stat-card">
+        <i class="fa fa-boxes"></i>
+        <div>
+          <h3 id="totalProducts">0</h3>
+          <p>Total Products</p>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <i class="fa fa-user"></i>
+        <div>
+          <h3 id="myProducts">0</h3>
+          <p>My Products</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section>
+      <h2 class="section-title">My Products</h2>
+      <div id="products" class="products-grid">
+        <!-- products render here -->
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
